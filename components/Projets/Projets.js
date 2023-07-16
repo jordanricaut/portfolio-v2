@@ -27,14 +27,14 @@ export default function Projets() {
                       if (l.externe && l.repertoire) {
                         return (
                           <>
-                            <a href={l.externe} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--externe"></a>
-                            <a href={l.repertoire} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--github"></a>
+                            <a href={l.externe} key={l.externe} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--externe"></a>
+                            <a href={l.repertoire} key={l.repertoire} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--github"></a>
                           </>
                         );
                       } else if (l.externe) {
-                        return <a href={l.externe} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--externe"></a>;
+                        return <a href={l.externe} key={l.externe} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--externe"></a>;
                       } else if (l.repertoire) {
-                        return <a href={l.repertoire} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--github"></a>;
+                        return <a href={l.repertoire} key={l.repertoire} target="_blank" className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--github"></a>;
                       }
                     })}
                   </div>
