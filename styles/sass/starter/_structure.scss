@@ -1,0 +1,101 @@
+/* ====================
+     structural variables
+     ==================== */
+
+/* container variables */
+$max-container-width: 1920px;
+$mobile-padding: 35px;
+
+/* Containers */
+$large-container-width: 1024px;
+$medium-container-width: 780px;
+$small-container-width: 540px;
+
+/* Media queries du site, préférer des pixels pour un support d'iOS. A terme les rem sont à préférer pour le zoom accessible */
+// Exemple :
+//	@media(#{$break-max-sm}) {
+//	}
+
+$break-max-container-width: "max-width: 1367px";
+$break-min-container-width: "min-width: 1366px";
+
+/* Responsive breakpoints */
+$break-min-sm: "min-width: 541px";
+$break-min-md: "min-width: 721px";
+$break-min-lg: "min-width: 1025px";
+
+$break-max-sm: "max-width: 540px";
+$break-max-md: "max-width: 720px";
+$break-max-lg: "max-width: 1024px";
+
+/* ====================
+   containers
+   ==================== */
+
+/* mixins */
+@mixin container {
+	//width: 100%;
+	max-width: ($max-container-width + 2 * $mobile-padding);
+	margin: 0 auto;
+	padding: 0 $mobile-padding;
+	&--no-padding{
+		padding: 0;
+		max-width: $max-container-width;
+	}
+}
+
+/* wrapper div */
+.container {
+	@include container;
+
+	/*
+		On définit ici des nouveaux points pour le .container
+		En prenant en compte le padding mobile
+	*/
+
+	&--1990 {
+		max-width: (1990 + 2 * $mobile-padding);
+	}
+
+	&--1280 {
+		max-width: (1280 + 2 * $mobile-padding);
+	}
+
+	&--paddingless {
+		padding: 0;
+	}
+
+	/* Et on évite de l'appliquer à nouveau aux containers descendants */
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+/* ====================
+   horizontal rules
+   ==================== */
+
+hr {
+	display: block;
+	height: 1px;
+	margin: 1rem 0;
+	border: none;
+	background-color: #fff;
+}
+
+/* ====================
+   media/embeds
+   ==================== */
+
+img,
+audio,
+video,
+canvas,
+iframe {
+	display: block;
+}
+
+svg {
+	fill: currentColor;
+}

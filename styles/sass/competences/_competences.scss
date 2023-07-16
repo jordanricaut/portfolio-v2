@@ -1,0 +1,144 @@
+.cpt {
+  padding-bottom: 7rem;
+  h3 {
+    color: #001122;
+    span {
+      font-family: $font-family-secondary;
+      color: $color-rouge;
+    }
+  }
+  &__tri {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    &__bouton {
+      margin: 0 2rem 2rem 0;
+      font-size: 1.6rem;
+      line-height: 20px;
+      padding: 1rem 1.5rem;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      transform: skewX(-15deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        transform: skewX(15deg);
+      }
+      &:nth-child(1) {
+        background-color: #001122;
+      }
+      &:nth-child(2) {
+        background-color: #157cbd;
+      }
+      &:nth-child(3) {
+        background-color: #bd9915;
+      }
+      &:nth-child(4) {
+        background-color: #007020;
+      }
+    }
+  }
+  &__content {
+    margin-top: 3rem;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5rem 7rem;
+    }
+    &__element {
+      border-radius: 5px;
+      border-top: 5px solid;
+      background: #fff;
+      padding: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        color: #999;
+        text-transform: uppercase;
+        margin-top: 1rem;
+      }
+      &__img {
+        width: 100px;
+        height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &--html {
+          background-image: url("/img/competences/html-css.png");
+        }
+        &--js {
+          background-image: url("/img/competences/js.png");
+        }
+        &--php {
+          background-image: url("/img/competences/php.png");
+        }
+        &--sql {
+          background-image: url("/img/competences/MySQL_MongoDB.png");
+        }
+        &--boot {
+          background-image: url("/img/competences/bootstrap.png");
+        }
+        &--sass {
+          background-image: url("/img/competences/sass.png");
+        }
+        &--react {
+          background-image: url("/img/competences/react-redux.png");
+        }
+        &--backjs {
+          background-image: url("/img/competences/nodejs.png");
+        }
+        &--wp {
+          background-image: url("/img/competences/wordpress.png");
+        }
+        &--git {
+          background-image: url("/img/competences/git.png");
+        }
+        &--figma {
+          background-image: url("/img/competences/figma.png");
+        }
+        &--adobe {
+          background-image: url("/img/competences/ps-ai.png");
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cpt {
+    &__content {
+      &__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cpt {
+    &__content {
+      &__wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cpt {
+    .container {
+      padding: 0 15px;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    h3 {
+      font-size: 2.6rem;
+    }
+  }
+}

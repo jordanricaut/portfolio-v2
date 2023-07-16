@@ -1,0 +1,22 @@
+@import './starter/project-variables';
+@import './starter/normalize';
+@import './starter/fonts';
+@import './starter/structure';
+@import './starter/typography';
+
+
+@import './masterhead/header';
+@import './masterhead/masterhead';
+
+@import './about/about';
+@import './competences/competences';
+@import './projets/projets';
+@import './activites/activites';
+@import './contact/contact';
+@import './footer/footer';
+
+body {
+    background-color: $color-blanc;
+}
+
+

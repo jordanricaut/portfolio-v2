@@ -1,0 +1,35 @@
+.footer {
+    background-color: #fff;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem 0;
+        position: relative;
+    }
+    p {
+        margin: 0;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+    }
+    &__top {
+        position: absolute;
+        right: 0;
+        top: -24px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+      .container {
+        padding: 0 15px;
+      }
+      &__top {
+        display: none;
+      }
+    }
+  }

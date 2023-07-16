@@ -1,0 +1,71 @@
+.activites {
+  padding: 7rem 0;
+  h3 {
+    color: #001122;
+    span {
+      font-family: $font-family-secondary;
+      color: $color-rouge;
+    }
+  }
+  &__contenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7rem;
+    margin-top: 7rem;
+    &__bloc {
+      border-radius: 10px;
+      background: #fff;
+      padding: 4rem;
+      text-align: center;
+      position: relative;
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      &__icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -35px;
+        background-color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .activites {
+    &__contenu {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .activites {
+    &__contenu {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .activites {
+    .container {
+      padding: 0 15px;
+    }
+    > h3 {
+      font-size: 2.6rem;
+    }
+  }
+}

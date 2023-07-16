@@ -1,0 +1,114 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  &__wrapper {
+    background-color: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    span {
+      background: #444;
+      height: 0.1em;
+      display: block;
+      position: relative;
+      width: 60px;
+      left: 0;
+    }
+    li {
+      display: flex;
+      flex-direction: row;
+      ul {
+        position: relative;
+        margin: 0 0 0 2rem;
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 15px;
+          color: $color-rouge;
+          font-family: "Barlow Condensed", sans-serif;
+          font-weight: $font-weight-medium;
+        }
+        &:nth-child(1)::before {
+          content: "01.";
+        }
+        &:nth-child(2)::before {
+          content: "02.";
+        }
+        &:nth-child(3)::before {
+          content: "03.";
+        }
+        &:nth-child(4)::before {
+          content: "04.";
+        }
+        &:nth-child(5)::before {
+          content: "05.";
+        }
+        a {
+          &:after {
+            content: "";
+            position: absolute;
+            left: 10px;
+            display: inline-block;
+            height: 1em;
+            width: 50%;
+            border-bottom: 2px solid;
+            margin-top: 10px;
+            opacity: 0;
+            color: $color-rouge;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+          }
+
+          &:hover:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    &__nav li ul {
+      font-size: 1.6rem;
+      &::before {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    &__wrapper {
+      background: linear-gradient(
+        0deg,
+        rgba(248, 248, 248, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      box-shadow: none;
+    }
+    &__nav li ul {
+      display: none;
+    }
+    &__main {
+      justify-content: center;
+    }
+  }
+}

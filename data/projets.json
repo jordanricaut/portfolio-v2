@@ -1,0 +1,46 @@
+[
+  {
+    "nom": "Portfolio V1",
+    "lien": [
+      {
+        "externe": "https:///",
+        "repertoire": ""
+      }
+    ],
+    "texte": "Création de mon portfolio sous Wordpress avec la création d'un thème personnalisé avec l'intégration d'une maquette",
+    "motcle": ["Wordpress", "ACF", "Thème", "PHP", "Integration"]
+  },
+  {
+    "nom": "The Batch culture",
+    "lien": [
+      {
+        "externe": "https://thebatchculture.com/",
+        "repertoire": ""
+      }
+    ],
+    "texte": "Création d’un thème WordPress à partir d’une maquette pour une entreprise de vente de cafés. Integration de WooCommerce ainsi qu'un système de notation des produits",
+    "motcle": ["Wordpress", "ACF", "Thème", "PHP", "WooCommerce", "Integration"]
+  },
+  {
+    "nom": "Bot Discord",
+    "lien": [
+      {
+        "externe": "",
+        "repertoire": "https://github.com/jordanricaut/RGF_Bot"
+      }
+    ],
+    "texte": "Création d’un bot discord permettant d'utiliser des commandes personnalisés ainsi qu'automatisé des messages.",
+    "motcle": ["Backend", "NodeJS", "API", "DiscordJS"]
+  },
+  {
+    "nom": "Formation",
+    "lien": [
+      {
+        "externe": "",
+        "repertoire": "https://github.com/jordanricaut?tab=repositories"
+      }
+    ],
+    "texte": "Multiples projets pour l'apprentisage de différents languages et librairies .",
+    "motcle": ["Backend", "Frontend", "JS", "ReactJS", "Redux", "HTML", "CSS"]
+  }
+]

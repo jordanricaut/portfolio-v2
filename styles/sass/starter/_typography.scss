@@ -1,0 +1,205 @@
+/* ====================
+   Typography
+   ==================== */
+
+/* font families */
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: "Barlow Condensed", serif;
+$base-font-family: $font-family-primary;
+
+/* base unitless line heights */
+$base-line-height: 1.6;
+$heading-line-height: 1.2;
+
+/* font sizes */
+$font-size-1: 7rem;
+$font-size-2: 3.5rem;
+$font-size-3: 2.8rem;
+$font-size-4: 2rem;
+$font-size-5: 1.8rem;
+$font-size-6: 1.6rem;
+$font-size-7: 1.4rem;
+$font-size-8: 1.3rem;
+$font-size-9: 1.2rem;
+
+$font-size-base: $font-size-5;
+
+/* font weights */
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+/* letter spacing */
+$letter-spacing-base: 0;
+
+/* applied font weights */
+$font-weight-base: $font-weight-normal;
+$heading-font-weight: $font-weight-bold;
+
+/* list variables */
+$list-margin-left: 2rem;
+$unordered-list-style: disc;
+
+/* margins */
+$heading-margin-bottom: 1rem;
+$paragraph-margin-bottom: 1rem;
+
+/* ====================
+   global font settings
+   ==================== */
+
+html {
+	/* font smoothing */
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+
+	/* base font family */
+	font-family: $base-font-family;
+
+	/* set base font-size to equiv "10px", which is adapted to rem unit */
+	font-size: 62.5%;
+
+	/* base line height */
+	line-height: $base-line-height;
+
+	/* base font weight */
+	font-weight: $font-weight-base;
+
+	/* base letter spacing */
+	letter-spacing: $letter-spacing-base;
+}
+
+body {
+	font-size: $font-size-base;
+}
+
+/* ====================
+   headings
+   ==================== */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	margin-bottom: $heading-margin-bottom;
+	line-height: $heading-line-height;
+	font-weight: $heading-font-weight;
+}
+
+/* heading sizes and spacing */
+h1,
+.h1 {
+	font-family: $font-family-primary;
+	font-size: 7rem;
+	font-weight: $font-weight-bold;
+}
+
+h2,
+.h2 {
+	font-family: $font-family-primary;
+	font-size: 6rem;
+	font-weight: $font-weight-bold;
+}
+
+h3,
+.h3 {
+	font-family: $font-family-primary;
+	font-size: 3rem;
+	font-weight: $font-weight-bold;
+}
+
+h4,
+.h4 {
+	font-family: $font-family-primary;
+	font-size: 2.2rem;
+	font-weight: $font-weight-semibold;
+}
+
+h5,
+.h5 {
+	font-size: $font-size-5;
+}
+
+h6,
+.h6 {
+	font-size: $font-size-6;
+}
+
+p,
+.p {
+	font-family: $font-family-primary;
+	font-size: 16px;
+	font-weight: $font-weight-normal;
+	color: $color-text;
+}
+
+/* ====================
+   additional type styles
+   ==================== */
+
+/* small font size */
+small {
+	font-size: $font-size-6;
+}
+
+/* additional font weights */
+strong,
+b {
+	font-weight: $font-weight-bold;
+}
+
+/* block spacing */
+p,
+dl,
+ol,
+ul,
+blockquote,
+figcaption {
+	margin: 0 0 $paragraph-margin-bottom;
+}
+
+/* link inside <p> */
+p {
+	a {
+		font-weight: $font-weight-bold;
+	}
+}
+
+/* blockquote */
+blockquote p {
+	&::before {
+		content: "\201c";
+	}
+	&::after {
+		content: "\201d";
+	}
+}
+
+/* ====================
+   list styles
+   ==================== */
+ol,
+ul {
+	margin-left: $list-margin-left;
+}
+
+/* unordered list bullets */
+ul {
+	list-style: $unordered-list-style;
+}
+
+.centered-title {
+	display: flex;
+	justify-content: center;
+}
