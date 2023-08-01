@@ -13,9 +13,10 @@ export default function Projets() {
             <div className="projets__contenu__bloc">
               <div className="projets__contenu__bloc__lien">
                 <a
-                  href=""
+                  href="#"
                   target="_blank"
                   className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--externe"
+                  aria-label="Lien vers l'ancien portfolio"
                 ></a>
               </div>
               <h3>Portfolio V1</h3>
@@ -38,6 +39,7 @@ export default function Projets() {
                   href="https://thebatchculture.com/"
                   target="_blank"
                   className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--externe"
+                  aria-label="Lien vers le site thebatchculture.com"
                 ></a>
               </div>
               <h3>The Batch Culture</h3>
@@ -62,6 +64,7 @@ export default function Projets() {
                   href="https://github.com/jordanricaut/RGF_Bot"
                   target="_blank"
                   className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--github"
+                  aria-label="Lien vers le repertoire github du projet du bot discord"
                 ></a>
               </div>
               <h3>Bot Discord</h3>
@@ -80,6 +83,7 @@ export default function Projets() {
                   href="https://github.com/jordanricaut?tab=repositories"
                   target="_blank"
                   className="projets__contenu__bloc__lien__icon projets__contenu__bloc__lien__icon--github"
+                  aria-label="Lien vers les repertoire de la formation openclassroom"
                 ></a>
               </div>
               <h3>Formation OpenClassroom</h3>

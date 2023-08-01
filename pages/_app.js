@@ -6,6 +6,10 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Jordan Ricaut - Développeur web frontend freelance</title>
+        <meta
+          name="description"
+          content="Jordan Ricaut - Développeur web frontend freelance sur la région de Vannes "
+        />
       </Head>
       <Component {...pageProps} />
     </>

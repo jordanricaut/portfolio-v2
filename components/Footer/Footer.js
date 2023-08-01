@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="container container--1280">
         <div className="footer__wrapper">
           <p>© 2023 Jordan RICAUT</p>
-          <button onClick={goToTop} className="footer__top">
+          <button onClick={goToTop} className="footer__top" aria-label="Bouton retour en haut du site">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="44"
